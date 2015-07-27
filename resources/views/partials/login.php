@@ -1,14 +1,16 @@
-<div class="col-sm-4 col-sm-offset-4">
-    <div class="well">
-        <h3>Login</h3>
+<div class="login">
+    <h3>Keep</h3>
+    <md-card class="login-form">
         <form>
-            <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" ng-model="auth.email">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" ng-model="auth.password">
-            </div>
-            <button class="btn btn-primary" ng-click="auth.login()">Submit</button>
+            <md-input-container>
+                <label>Email</label>
+                <input type="email" ng-model="auth.email">
+            </md-input-container>
+            <md-input-container>
+                <label>Senha</label>
+                <input type="password" ng-model="auth.password">
+            </md-input-container>
+            <md-button ng-click="auth.login()" class="md-raised md-primary">Entrar</md-button>
         </form>
-    </div>
+    </md-card>
 </div>

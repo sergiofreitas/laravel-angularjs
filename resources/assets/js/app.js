@@ -23,7 +23,7 @@
 		$provide.factory('redirectWhenLoggedOut', redirectWhenLoggedOut);
 		$httpProvider.interceptors.push('redirectWhenLoggedOut');
 
-		$authProvider.loginUrl = 'http://localhost/formkeep/public/api/authenticate';
+		$authProvider.loginUrl = 'http://localhost/formkeep/api/authenticate';
 		$urlRouterProvider.otherwise('/auth');
 		$stateProvider.state('auth', {
 			url: '/auth',

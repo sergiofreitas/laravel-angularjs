@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/formkeep/public',
+    'url' => 'http://localhost/formkeep',
 
     /*
     |--------------------------------------------------------------------------
